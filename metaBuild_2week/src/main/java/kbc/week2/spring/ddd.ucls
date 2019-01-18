@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="kbc.week2.spring.output.OutPutFile" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/output/OutPutFile.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1023" y="192"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="kbc.week2.spring.output.OutPutConsole" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/output/OutPutConsole.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1014" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="kbc.week2.spring.output.OutPutI" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/output/OutPutI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="846" y="341"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="kbc.week2.spring.input.InPutFile" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/input/InPutFile.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="425" y="206"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="kbc.week2.spring.input.InPutI" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/input/InPutI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="239" y="329"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="kbc.week2.spring.input.InPutConsole" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/input/InPutConsole.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="428" y="445"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="kbc.week2.spring.main.Main" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/main/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1216" y="338"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="kbc.week2.spring.util.FilePath" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/util/FilePath.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="608" y="177"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="kbc.week2.spring.util.WordCount" project="metaBuild_kbc_week2" 
+    file="/metaBuild_kbc_week2/src/main/java/kbc/week2/spring/util/WordCount.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="594" y="366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <realization id="12">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <realization id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="17">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	
+	<!-- console input -->
+	<bean id="InPutConsole" class="kbc.week2.spring.input.InPutConsole"/>
+	
+	<!-- file input -->
+	<!-- <bean id="InPutFile" class="kbc.week2.spring.input.InPutFile" >
+	 <constructor-arg value="D:\\Develope\\file\\week_1.txt"/>
+	</bean> -->
+	
+	<!-- 글자 수 카운트 -->
+	<bean id="WordCount" class="kbc.week2.spring.util.WordCount" >
+		<constructor-arg ref="InPutConsole" />
+		<!-- <constructor-arg ref="InPutFile" /> -->
+	</bean>
+	
+	<!-- output filepath -->
+	<bean id="filePath" class="kbc.week2.spring.util.FilePath"/>
+	
+	
+	<!-- output console -->
+	<!-- <bean id="OutPutConsole" class="kbc.week2.spring.output.OutPutConsole">
+		<constructor-arg ref="WordCount"/>
+	</bean> -->
+	
+	<!-- output file -->
+	<bean id="OutPutFile" class="kbc.week2.spring.output.OutPutFile">
+		<constructor-arg ref="WordCount"/>
+		<constructor-arg ref="filePath"/>
+	</bean>
+	
+</beans>
