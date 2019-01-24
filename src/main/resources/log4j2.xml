@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Configuration status="trace">
+
+    <properties>
+        <property name="name">Angular-Seed</property>
+        <Property name="logDir">D:\\logs\\</Property>
+        <property name="pattern">[%d{yy.MM.dd HH:mm:ss}] [%-5p]  [%t %C{2}.%M:%L ] - %m%n</property>
+    </properties>
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" >
+            <PatternLayout pattern="${pattern}" />
+        </Console>
+
+        <RollingFile name="file" fileName="${logDir}/${name}.log" filePattern="${logDir}/$${date:yyyy}$${date:MM}$${date:dd}/${name}_%d{yyyyMMddHH}.log.gz">
+            <PatternLayout pattern="${pattern}"/>
+            <CronTriggeringPolicy schedule="0 0 0 * * ?"/>
+            <DefaultRolloverStrategy>
+                <Delete basePath="${logDir}" maxDepth="2">
+                    <IfFileName glob="*/${name}_*.log.gz" />
+                    <IfLastModified age="7d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.mesim.bp" level="INFO" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="file"/>
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="file"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
