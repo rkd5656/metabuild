@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/target/classes/mybatis/db-config.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/config/kafka-config.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/config/schedule-config.xml</file>
+          <file>file://$MODULE_DIR$/bin/main/config/schedule-config.xml</file>
+          <file>file://$MODULE_DIR$/bin/main/mybatis/db-config.xml</file>
+          <file>file://$MODULE_DIR$/bin/main/config/kafka-config.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/config/es-config.xml</file>
+          <file>file://$MODULE_DIR$/bin/main/config/es-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>
