@@ -14,7 +14,7 @@
     <div class="col-md-4 col-lg-4 col-sm-12">
         <div class="card user-card">
             <div class="card-header-img">
-                <img class="img-fluid img-radius" src="../../../resources/files/assets/images/user-card/img-round2.jpg" alt="card-img">
+                <img class="img-fluid img-radius" src="${pageContext.request.contextPath }/resources/files/assets/images/user-card/img-round2.jpg" alt="card-img">
                 <h4>김미선</h4>
                 <h5>kimmi4823@naver.com</h5>
                 <h6>지능융합기술실</h6>

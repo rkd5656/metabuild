@@ -4,7 +4,7 @@ angular.module('meta-app').factory('MisunService', function ($http) {
      */
     function getBoardList(){
         return $http({
-            url: '/rest/getBoardList',
+            url: '/seed/rest/getBoardList',
             method: "GET"
         });
     }
