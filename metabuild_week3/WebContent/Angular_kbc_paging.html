@@ -25,6 +25,9 @@
 		var page_size = 5;
 		//페이지 번호
 		var page_number = 0;
+		
+		
+		
 		//총 페이지 수
 		var size;
 		//페이지 리스트 불러오기
@@ -44,8 +47,6 @@
 				size = pageNum($scope.totalSize, page_size);
 				//pageNumbers 배열에 원하는 페이징 번호 넣기
 				countPageNum(page_number);
-				//페이징 컬러
-				pageColor(page_number);
 			});
 		}
 		
@@ -92,21 +93,18 @@
 			}else if(page_number>=size){// 다음페이지가 더이상 없을때
 				page_number = size-1;
 			}
-			
+			//선택페이지 컬러
+			$scope.pageActive = page_number;
 			// 페이지 출력
 			pageList();
-			//선택페이지 컬러
-			pageColor(page_number);
+			
 			
 		}
-		
+		$scope.pageActive = page_number;
 		//초기에 리스트 불러오기 실행
 		pageList();
 		
 	}]);
-	
-	
-	
 	
 	//총 페이지 수 계산
 	function pageNum(num, page_size){
@@ -115,18 +113,16 @@
 	}
 	
 	//페이징 컬러
-	function pageColor(page_number){
+	/* function pageColor(page_number){
 		var color = document.getElementsByClassName('pageColor');
-		
 		for (var i = 0; i < color.length; i++) {
 			if(page_number==color[i].value){
 				angular.element(color[i]).addClass("active");
-				
 			}else{
 				angular.element(color[i]).removeClass("active");
 			}
 		}
-	}
+	} */
 	
 </script>
 
@@ -159,14 +155,10 @@
 	<nav aria-label="Page navigation example" >
 		<ul class="pagination justify-content-center">
 		<li class='page-item' value="'pre'"><a class='page-link' href='#' tabindex='-1' ng-click="page('pre')" >Previous</a></li>
-		<li class="pageColor page-item {{active}}" ng-repeat="paging in pageNumbers" value={{paging}}><a class='page-link' href='#' ng-click="page(paging)">{{paging+1}}</a></li>
+		<li class="{{pageActive == paging ? 'active' : ''}} page-item" ng-repeat="paging in pageNumbers"><a class='page-link' href='#' ng-click="page(paging)">{{paging+1}}</a></li>
 		<li class='page-item' value="'next'"><a class='page-link' href='#' ng-click="page('next')">Next</a></li>
 		</ul>
 	</nav>
 </body>
-	<script type="text/javascript">
-			
-			
-	</script>
 </html>
 
