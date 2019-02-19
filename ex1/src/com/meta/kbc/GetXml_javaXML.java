@@ -249,17 +249,24 @@ public class GetXml_javaXML {
 
 	//메인
 	public static void main(String[] args) {
-		Runtime.getRuntime().gc();
+		long startMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory(), endMemory = 0;
+		      
+		
 		long start = System.currentTimeMillis();
 		
 		GetXml_javaXML dd = new GetXml_javaXML();
 		dd.getXmlF();
-		
+
 		long end = System.currentTimeMillis();
-		long used = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+		
+		
+	    endMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+	    
+	    long useMemory = (endMemory-startMemory);
+
 		//실행시간 측정
 		System.out.println( "실행 시간 : " + ( end - start )/1000.0 + "초" );
-		System.out.println("used memory is " + used + " bytes");
+		System.out.println("Used Memory:"+useMemory+"bytes");
 		
 	}
 }
